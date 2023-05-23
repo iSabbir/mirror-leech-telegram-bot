@@ -55,7 +55,7 @@ async def stats(client, message):
 async def start(client, message):
     buttons = ButtonMaker()
     buttons.ubutton(
-        "Repo", "https://www.woxreview.com/t")
+        "Repo", "https://www.woxreview.com/")
     buttons.ubutton("Owner", "https://t.me/sabbir_i")
     reply_markup = buttons.build_menu(2)
     if await CustomFilters.authorized(client, message):
